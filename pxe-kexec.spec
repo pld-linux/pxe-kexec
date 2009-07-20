@@ -1,7 +1,7 @@
 Summary:	Linux boots Linux via network
 Name:		pxe-kexec
 Version:	0.1.7
-Release:	0.1
+Release:	1
 License:	GPL v2+
 Group:		Applications/System
 URL:		http://pxe-kexec.berlios.de/
@@ -9,6 +9,7 @@ Source0:	http://download.berlios.de/pxe-kexec/%{name}-%{version}.tar.bz2
 # Source0-md5:	3aa6f95a31a3e7eadc363dec9d8321d7
 BuildRequires:	cmake
 BuildRequires:	curl-devel
+BuildRequires:	libstdc++-devel
 BuildRequires:	ncurses-devel
 BuildRequires:	readline-devel
 Requires:	kexec-tools
@@ -39,6 +40,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc COPYING NEWS README ChangeLog
+%doc NEWS README ChangeLog
 %attr(755,root,root) %{_sbindir}/pxe-kexec
 %{_mandir}/man8/pxe-kexec.8*

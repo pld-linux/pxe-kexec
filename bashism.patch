@@ -1,0 +1,11 @@
+--- pxe-kexec-0.1.7/src/pxekexec.cc~	2008-10-22 21:48:27.000000000 +0300
++++ pxe-kexec-0.1.7/src/pxekexec.cc	2009-07-20 14:30:02.967066054 +0300
+@@ -272,7 +272,7 @@
+ /* -------------------------------------------------------------------------- */
+ bool PxeKexec::checkEnv()
+ {
+-    int ret = system("kexec -h &>/dev/null");
++    int ret = system("kexec -h >/dev/null 2>&1");
+     if (WEXITSTATUS(ret) != 0) {
+         cout << "Error: kexec-tools are not installed." << endl;
+         return false;
