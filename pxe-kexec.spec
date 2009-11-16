@@ -11,6 +11,7 @@ BuildRequires:	cmake
 BuildRequires:	curl-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	ncurses-devel
+BuildRequires:	perl-tools-pod
 BuildRequires:	readline-devel
 Requires:	kexec-tools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
