@@ -8,7 +8,7 @@ Group:		Applications/System
 Source0:	http://download.berlios.de/pxe-kexec/%{name}-%{version}.tar.bz2
 # Source0-md5:	2e6fd2e0e9fb0f0a006935c9d1860284
 URL:		http://pxe-kexec.berlios.de/
-BuildRequires:	cmake
+BuildRequires:	cmake >= 2.4
 BuildRequires:	curl-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	ncurses-devel
